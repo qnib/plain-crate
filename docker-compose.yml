@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db:
+    image: qnib/plain-crate
+    ports:
+     - "4200:4200"
+     - "4300:4300"
+    environment:
+     CRATE_HEAP_SIZE: 2g
+     CRATE_EXP_NODES: 2
